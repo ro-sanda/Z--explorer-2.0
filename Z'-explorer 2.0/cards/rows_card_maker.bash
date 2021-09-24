@@ -32,14 +32,13 @@ e8=$(grep -c '^' exp_card_8.dat)
 e9=$(grep -c '^' exp_card_9.dat)
 e10=$(grep -c '^' exp_card_10.dat)
 
-dm1=$(grep -c '^' DM/VEC/DM_1.dat )
-dm2=$(grep -c '^' DM/AXIAL/DM_2.dat )
+dm=$(grep -c '^' DM/AXIAL/DM_1.dat )
 
 ir=$(grep -c '^' ../incard/card_1.dat)
 ic=$(awk '{print NF; exit}' ../incard/card_1.dat)
 
 # -e allows the use of \n
-echo  -e "$s1 $e1 \n$s2 $e2 \n$s3 $e3 \n$s4 $e4 \n$s5 $e5 \n$s6 $e6 \n$s7 $e7 \n$s8 $e8 \n$s9 $e9 \n$s10 $e10 \n$s11 $dm1 \n$s12 $dm2 \n$s13 0 \n$ir $ic" >> "$name".dat
+echo  -e "$s1 $e1 \n$s2 $e2 \n$s3 $e3 \n$s4 $e4 \n$s5 $e5 \n$s6 $e6 \n$s7 $e7 \n$s8 $e8 \n$s9 $e9 \n$s10 $e10 \n$s11 0 \n$s12 $dm \n$s13 0 \n$ir $ic" >> "$name".dat
 
 
 
