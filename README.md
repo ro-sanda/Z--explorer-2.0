@@ -34,7 +34,7 @@ where M is the Z' mass (in TeV), gfL/R is the Z' coupling to the corresponding L
 Every benchmark point in parameter space should be set in a different row. There is no limit in the number of signal points (i.e. rows) that can be explored.
 
 
-In */incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1* can be found an incard example for the Vector Mediator case presented in ATLAS results in (Phys.Rev.D 103 (2021) 11, 112006) to perform a test run and check the output card which will be placed at */output/1.dat* .
+In */incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1* can be found an incard example for the Vector Mediator case presented in ATLAS results (Phys.Rev.D 103 (2021) 11, 112006) to perform a test run and check the output card which will be placed at */output/1.dat* .
 
 
 
@@ -79,7 +79,10 @@ More information about calculation can be found in */extra/* folder:
 
 #### EXPERIMENTAL INFORMATION:
 
-Available experimental data from LHC to all possible Z' visible decay channels is stored in  */cards/* folder as experimental cards. Data is specified in two columns, where the first one is the corresponding Z'mass (in TeV) and the second one is the corresponding σlim (in pb): 
+
+For visible channels:
+
+Available experimental data from LHC to all possible Z' decay channels is stored in  */cards/* folder as experimental cards. Data is specified in two columns, where the first one is the corresponding M (in TeV) and the second one is the corresponding σlim (in pb): 
 
 
 exp_card_1.dat-> jj (arXiv:1910.08447)
@@ -91,9 +94,10 @@ exp_card_6.dat-> ττ (arXiv:1709.07242)
 exp_card_8.dat-> ww (arXiv:1710.07235)
 exp_card_9.dat-> zh (arXiv:1906.00057)
 
-
-
 User can update the experimental information just by replacing the corresponding experimental card. No other step is required. 
+
+
+
 
 For invisible channels:
 
@@ -105,6 +109,9 @@ Note that Sνν and Sxx in */output/1.dat* are left as dummy variables for futur
 For the Dirac DM (χχ) channel, in  */cards/* folder also can be found
 
 DM/AXIAL/DM_1.dat -> χχ (arXiv:2102.10874)
+
+Data is specified in three columns in this case, where the first one is the corresponding M (in TeV), the second one is the corresponding mχ (in TeV), and the third one is the σlim (in pb). In this particulary case, results are set for the Leptophobic Axial-Vector Mediator case with gq=0.25 and gχ=1 (as in the ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
+
 
 
 
