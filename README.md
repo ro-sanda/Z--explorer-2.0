@@ -10,11 +10,11 @@
 
 
 
-Download main directory */Z'-explorer 2.0/* into your system. To start, set on */lib/* folder and run *make*. No aditionally steps are required. 
+Download main directory */Z'-explorer 2.0/* into your system. To start, set on */lib/* folder and run *make*. No additional steps are required. 
 
-The script runs on C++.
+The script runs in C++.
 
-If changes in source code are done, set on */lib/* folder again and repeat the above before running .
+If changes in source code are done, set on */lib/* folder again and repeat the above before running.
 
 
 
@@ -26,15 +26,15 @@ If changes in source code are done, set on */lib/* folder again and repeat the a
 Information about the Z' model must be provided through an incard text file, that must be stored as */incard/card_1.dat*. For each benchmark point in the NP parameter space, the following information must be provided in columns (separated by spaces, no tabs):
 
 
-M  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
+MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
 
 
-where M is the Z' mass (in TeV), gfL/R is the Z' coupling to the corresponding Left/Right visible fermion, and Γνν, Γww, ΓZh are the partial widths to neutrinos, WW and Zh, and mχ is the fermionic DM mass (and gχL/R its Left/Right coupling to Z'). The total width to other non-SM particles can be added as Γxx.  If not, leave Γxx as 0.
+where MZ' is the Z' mass (in TeV), gfL/R is the Z' coupling to the corresponding Left/Right visible fermion, and Γνν, Γww, ΓZh are the partial widths to neutrinos, WW and Zh, and mχ is the fermionic DM mass (and gχL/R its Left/Right coupling to Z'). The total width to other non-SM particles can be added as Γxx.  If not, leave Γxx as 0.
 
 Every benchmark point in parameter space should be set in a different row. There is no limit in the number of signal points (i.e. rows) that can be explored.
 
 
-In */incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1* can be found an incard example for the Vector Mediator case presented in ATLAS results (Phys.Rev.D 103 (2021) 11, 112006) to perform a test run and check the output card which will be placed at */output/1.dat* .
+In */incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1* can be found an incard example for the vector mediator case presented in ATLAS results (Phys. Rev.D 103 (2021) 11, 112006) to perform a test run and check the output card which will be placed at */output/1.dat* .
 
 
 
@@ -80,9 +80,10 @@ More information about calculation can be found in */extra/* folder:
 #### EXPERIMENTAL INFORMATION:
 
 
+
 For visible channels:
 
-Available experimental data from LHC to all possible Z' decay channels is stored in  */cards/* folder as experimental cards. Data is specified in two columns, where the first one is the corresponding M (in TeV) and the second one is the corresponding σlim (in pb): 
+Available experimental data from LHC to all possible Z' decay channels is stored in  */cards/* folder as experimental cards. Data is specified in two columns, where the first one is the corresponding MZ' (in TeV) and the second one is the corresponding σlim (in pb): 
 
 
 exp_card_1.dat-> jj (arXiv:1910.08447)
@@ -110,7 +111,7 @@ For the Dirac DM (χχ) channel, in  */cards/* folder also can be found
 
 DM/AXIAL/DM_1.dat -> χχ (arXiv:2102.10874)
 
-Data is specified in three columns in this case, where the first one is the corresponding M (in TeV), the second one is the corresponding mχ (in TeV), and the third one is the σlim (in pb). In this particulary case, results are set for the Leptophobic Axial-Vector Mediator case with gq=0.25 and gχ=1 (as in ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
+Data is specified in three columns in this case, where the first one is the corresponding MZ' (in TeV), the second one is the corresponding mχ (in TeV), and the third one is the σlim (in pb). In this particular case, results are set for the leptophobic axial-vector mediator case with gq=0.25 and gχ=1 (as in ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
 
 
 
@@ -118,7 +119,11 @@ Data is specified in three columns in this case, where the first one is the corr
 
 #### RECORDED SIMULATIONS USED BY Z'-EXPLORER:
 
-For computing Z' production cross section, previously generated and recorded production cross section with MadGraph5_aMC@NLO (arXiv:1405.0301) is stored in */cards/* folder as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at sqrt(s) = 13 TeV, and for M between 0.4 and 8 TeV (the range of masses that can be explored with Z'-explorer).
+
+
+For visible channels:
+
+For computing Z' production cross-section, previously generated and recorded production cross-section with MadGraph5_aMC@NLO (arXiv:1405.0301) is stored in */cards/* folder as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at sqrt(s) = 13 TeV, and for M between 0.4 and 8 TeV (the range of masses that can be explored with Z'-explorer).
 
 sim_card_1.dat->  uu-->Z'
 sim_card_2.dat->  dd-->Z'
@@ -130,8 +135,24 @@ These simulations are combined with the incard data to calculate σpred for visi
 
 
 
+For invisible χχ channel:
+
+In this case, since this channel is associated with the mono-jet search, for computing Z' production cross-section, previously generated and recorded production cross-section plus ISR with MadGraph5_aMC@NLO is stored in */cards/* folder, also as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at sqrt(s) = 13 TeV, and for M between 0.001 and 2.5 TeV (the range of masses that are explored in the mono-jet results), for the vector and the axial-vector mediators cases.
+
+
+AXIAL_Zpj_1.dat->  pp-->Z'_{A} j
+AXIAL_Zpj_2.dat->  pp-->Z'_{A} j
+AXIAL_Zpj_3.dat->  pp-->Z'_{A} j
+AXIAL_Zpj_4.dat->  pp-->Z'_{A} j
+
+VEC_Zpj_1.dat->  pp-->Z'_{V} j
+VEC_Zpj_2.dat->  pp-->Z'_{V} j
+VEC_Zpj_3.dat->  pp-->Z'_{V} j
+VEC_Zpj_4.dat->  pp-->Z'_{V} j
+
+
+These simulations are combined with the incard data and properly turn into right and left chiralities contributions to calculate σpred for χχ channel.
 
 
 
-
-For more information, please visit the associated publication *"Z'-explorer : a simple tool to probe Z' models against LHC data".* (https://arxiv.org/pdf/2005.05194.pdf)
+For more information, please visit the associated publication *"Z'-explorer: a simple tool to probe Z' models against LHC data".* (https://arxiv.org/pdf/2005.05194.pdf)
