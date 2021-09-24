@@ -23,7 +23,7 @@ If changes in source code are done, set on */lib/* folder again and repeat the a
 #### SET MODEL:
 
 
-Information about the Z' model must be provided through an incard text file, that must be stored as */incard/card_1.dat*. For each reference point in parameter space, the following information must be provided in columns (separated by spaces, no tabs):
+Information about the Z' model must be provided through an incard text file, that must be stored as */incard/card_1.dat*. For each benchmark point in the NP parameter space, the following information must be provided in columns (separated by spaces, no tabs):
 
 
 M  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
@@ -31,10 +31,10 @@ M  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  g�
 
 where M is the Z' mass (in TeV), gfL/R is the Z' coupling to the corresponding Left/Right visible fermion, and Γνν, Γww, ΓZh are the partial widths to neutrinos, WW and Zh, and mχ is the fermionic DM mass (and gχL/R its Left/Right coupling to Z'). The total width to other non-SM particles can be added as Γxx.  If not, leave Γxx as 0.
 
-Every reference point in parameter space should be set in a different row. There is no limit in the number of reference points (i.e. rows) that can be explored.
+Every benchmark point in parameter space should be set in a different row. There is no limit in the number of signal points (i.e. rows) that can be explored.
 
 
-In */incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1* can be found an incard example for the Vector Mediator case used in ATLAS results in (Phys.Rev.D 103 (2021) 11, 112006) to perform a test run and check the output card which will be placed at */output/1.dat* .
+In */incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1* can be found an incard example for the Vector Mediator case presented in ATLAS results in (Phys.Rev.D 103 (2021) 11, 112006) to perform a test run and check the output card which will be placed at */output/1.dat* .
 
 
 
@@ -57,7 +57,7 @@ After providing an incard, set on the main directory and enter *./program.out* .
 
 
 
-The generated output file is saved in */output/1.dat* . The output contains the following information for each reference point set in incard:
+The generated output file is saved in */output/1.dat* . The output contains the following information for each benchmark point set in incard:
  
 
 M  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx  Sjj  Sbb  Stt  See  Sμμ  Sττ  Sνν  SWW  SZh  Sχχ Sxx   ΓZ'   WARNING:ΓZ'>5%
@@ -88,14 +88,23 @@ exp_card_3.dat-> tt (arXiv:1810.05955)
 exp_card_4.dat-> ee (arXiv:2103.02708)
 exp_card_5.dat-> μμ (arXiv:2103.02708)
 exp_card_6.dat-> ττ (arXiv:1709.07242)
-exp_card_7.dat-> νν -
 exp_card_8.dat-> ww (arXiv:1710.07235)
 exp_card_9.dat-> zh (arXiv:1906.00057)
+
+
+
+User can update the experimental information just by replacing the corresponding experimental card. No other step is required. 
+
+For invisible channels:
+
+exp_card_7.dat-> νν -
 exp_card_10.dat-> xx -
 
+Note that Sνν and Sxx in */output/1.dat* are left as dummy variables for future updates.
 
-User can update the experimental information just by replacing the corresponding experimental card. No other step is required. Note that Sνν and Sxx in */output/1.dat* are left as dummy variables for future updates.
+For the Dirac DM (χχ) channel, in  */cards/* folder also can be found
 
+DM/AXIAL/DM_1.dat -> χχ (arXiv:2102.10874)
 
 
 
