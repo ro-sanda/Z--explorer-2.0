@@ -152,13 +152,11 @@ printf("\n\nExtracting number of rows in cards...\n");
 
   int colDM=3;
 
-  int row_dm_1=rows[2*10 + 1];
-  double *dm_1;
-  dm_1=(double *) malloc(sizeof(double)*row_dm_1*colDM);
 
-  int row_dm_2=rows[2*11 + 1];
-  double *dm_2;
-  dm_2=(double *) malloc(sizeof(double)*row_dm_2*colDM);
+
+  int row_dmA=rows[2*11 + 1];
+  double *dmA;
+  dmA=(double *) malloc(sizeof(double)*row_dmA*colDM);
 
 
 
@@ -255,8 +253,7 @@ printf("\n\nReading experimental cards for visible final states...\n");
 
 printf("\n\nReading recast of experimental data for DM final state...\n");
 
-  read(dm_1,1,row_dm_1,3,7);
-  read(dm_2,2,row_dm_2,3,8);
+  read(dmA,1,row_dmA,3,8);
 
 //printf("\nComplete!\n");
 
@@ -598,19 +595,19 @@ savex(xsBRexp,headerssiglim,5,2,in_row,11); //Save in ./extra/5.dat
 //Limits for the DM channel
 printf("\nExtracting bounds from monojet recast DM final state...\n");
 
-//For each pair of Z' and χ masses in the in_card (in_row in total), find the index of the closest pair of masses within the recast cards for DM channel(rows_dm_2 in total, that is the number of rows in incard_VEC_DM_1.dat/incard_AXIAL_DM_2.dat -the number of rows is the same in both cards)
+//For each pair of Z' and χ masses in the in_card (in_row in total), find the index of the closest pair of masses within the recast cards for DM channel(rows_dmA in total, that is the number of rows in /DM/AXIAL/DM_1.dat )
 
 
-double norma2D[row_dm_2], k2D[in_row];
+double norma2D[row_dmA], k2D[in_row];
 
 int q2D=0;
 int p2D=0;
 
 for(q2D=0 ; q2D<in_row ; q2D++){
-  for(p2D=0 ; p2D<row_dm_2 ; p2D++){
-	norma2D[p2D]= fabs(sqrt((mass[q2D] - dm_2[3*p2D])*(mass[q2D] - dm_2[3*p2D])+(massDM[q2D]-dm_2[3*p2D+1])*(massDM[q2D]-dm_2[3*p2D+1])));
+  for(p2D=0 ; p2D<row_dmA ; p2D++){
+	norma2D[p2D]= fabs(sqrt((mass[q2D] - dmA[3*p2D])*(mass[q2D] - dmA[3*p2D])+(massDM[q2D]-dmA[3*p2D+1])*(massDM[q2D]-dmA[3*p2D+1])));
 	}
-	k2D[q2D]=indexofSmallestElement(norma2D,row_dm_2);
+	k2D[q2D]=indexofSmallestElement(norma2D,row_dmA);
 }
 
 
@@ -761,7 +758,7 @@ for (t4=0; t4<in_row; t4++){
 	int t6;
 	for (t5=0; t5<13; t5++){
         int index = k2D[t4];
-        significance_aux[t5] = 0.51* events[t5] * lumi * kfac * dm_2[3*index+2] * xsecpbtofb * scaleBR[t4] * scalePROD[t4] / (scaleBRATLAS[t4] * tot * sqrt(bckg[t5]));
+        significance_aux[t5] = 0.51* events[t5] * lumi * kfac * dmA[3*index+2] * xsecpbtofb * scaleBR[t4] * scalePROD[t4] / (scaleBRATLAS[t4] * tot * sqrt(bckg[t5]));
   }
   	t6=indexofLargestElement(significance_aux,13);
       	significance[t4]=significance_aux[t6];
@@ -770,6 +767,8 @@ for (t4=0; t4<in_row; t4++){
 
 
 
+
+//save(significance,6,2,in_row,15);
 
 
 
@@ -877,8 +876,7 @@ printf("\nWarning, point with width above 5%, check corresponding column in /out
   free(exp_8);
   free(exp_9);
   free(exp_10);
-  free(dm_1);
-  free(dm_2);
+  free(dmA);
   free(in_card);
   free(widths);
   free(widthsATLAS);

@@ -40,14 +40,11 @@ void read(double *matrix,int number,int rows,int columns,int option){
   if(option==6){
   strncpy(path, "./cards/AXIAL_Zpj_", 22);    
   }
-  if(option==7){
-  strncpy(path, "./cards/DM/VEC/DM_", 22);    
-  }
   if(option==8){
   strncpy(path, "./cards/DM/AXIAL/DM_", 22);    
   }
   if(option==9){
-  strncpy(path, "./cards/DM/VEC/bins-ZpVEC-",40);    
+  strncpy(path, "./cards/DM/AXIAL/bins-ZpAXIAL-",40);    
   }
   if(option==10){
   strncpy(path, "./cards/DM/bckg-",22);    
