@@ -110,7 +110,7 @@ For the Dirac DM (χχ) channel, in  */cards/* folder also can be found
 
 DM/AXIAL/DM_1.dat -> χχ (arXiv:2102.10874)
 
-Data is specified in three columns in this case, where the first one is the corresponding M (in TeV), the second one is the corresponding mχ (in TeV), and the third one is the σlim (in pb). In this particulary case, results are set for the Leptophobic Axial-Vector Mediator case with gq=0.25 and gχ=1 (as in the ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
+Data is specified in three columns in this case, where the first one is the corresponding M (in TeV), the second one is the corresponding mχ (in TeV), and the third one is the σlim (in pb). In this particulary case, results are set for the Leptophobic Axial-Vector Mediator case with gq=0.25 and gχ=1 (as in ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
 
 
 
