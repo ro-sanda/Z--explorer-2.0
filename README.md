@@ -1,4 +1,4 @@
-# <a href="https://arxiv.org/pdf/2005.05194.pdf" target=newwindow >Z'-explorer : a simple tool to probe Z' models against LHC data</a>
+# <a href="https://arxiv.org/pdf/2109.13194.pdf" target=newwindow >Z'-explorer 2.0: reconnoitering the dark matter landscape</a>
 
 ## A QUICK START USER GUIDE
 
@@ -155,4 +155,4 @@ These simulations are combined with the incard data and properly turn into right
 
 
 
-For more information, please visit the associated publication *"Z'-explorer: a simple tool to probe Z' models against LHC data".* (https://arxiv.org/pdf/2005.05194.pdf)
+For more information, please visit the associated publication *"Z'-explorer 2.0: reconnoitering the dark matter landscape".* (https://arxiv.org/pdf/2109.13194.pdf)
