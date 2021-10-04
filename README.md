@@ -23,7 +23,7 @@ If changes in source code are done, set on `/lib/` folder again and repeat the a
 #### SET MODEL:
 
 
-Information about the Z' model must be provided through an incard text file, that must be stored as `/incard/card_1.dat`. For each benchmark point in the NP parameter space, the following information must be provided in columns (separated by spaces, no tabs):
+Information about the *Z'* model must be provided through an incard text file, that must be stored as `/incard/card_1.dat`. For each benchmark point in the NP parameter space, the following information must be provided in columns (separated by spaces, no tabs):
 
 ~~~
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
