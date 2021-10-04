@@ -83,7 +83,7 @@ More information about calculation can be found in `/extra/` folder:
 
 For visible channels:
 
-Available experimental data from LHC to all possible *Z'* decay channels is stored in  `/cards/` folder as experimental cards. Data is specified in two columns, where the first one is the corresponding MZ' (in TeV) and the second one is the corresponding σlim (in pb): 
+Available experimental data from LHC to all possible *Z'* decay channels is stored in  `/cards/` folder as experimental cards. Data is specified in two columns, where the first one is the corresponding MZ' (in TeV) and the second one is the corresponding σ<sub>lim</sub> (in pb): 
 
 
 - `exp_card_1.dat`-> *jj* <a href="https://arxiv.org/pdf/1910.08447.pdf" target=newwindow >(arXiv:1910.08447)</a>
@@ -111,7 +111,7 @@ For the Dirac DM (*χχ*) channel, in  `/cards/` folder also can be found
 
 - `DM/AXIAL/DM_1.dat` -> *χχ* (arXiv:2102.10874)
 
-Data is specified in three columns in this case, where the first one is the corresponding MZ' (in TeV), the second one is the corresponding mχ (in TeV), and the third one is the σlim (in pb). In this particular case, results are set for the leptophobic axial-vector mediator case with gq=0.25 and gχ=1 (as in ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
+Data is specified in three columns in this case, where the first one is the corresponding MZ' (in TeV), the second one is the corresponding mχ (in TeV), and the third one is the σ<sub>lim</sub> (in pb). In this particular case, results are set for the leptophobic axial-vector mediator case with gq=0.25 and gχ=1 (as in ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
 
 
 
@@ -131,7 +131,7 @@ For computing *Z'* production cross-section, previously generated and recorded p
 - `sim_card_4.dat`->  *ss* &rarr; *Z'*
 - `sim_card_5.dat`->  *bb* &rarr; *Z'*
 
-These simulations are combined with the incard data to calculate σpred for visible channels.
+These simulations are combined with the incard data to calculate σ<sub>pred</sub> for visible channels.
 
 
 
