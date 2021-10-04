@@ -29,7 +29,7 @@ Information about the *Z'* model must be provided through an incard text file, t
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
 ~~~
 
-where `MZ'` is the *Z'* mass (in TeV), `gfL/R` is the *Z'* coupling to the corresponding Left/Right visible fermion, and `Γνν`, `Γww`, `ΓZh` are the partial widths to neutrinos, *WW* and *Zh*, and `mχ` is the fermionic DM mass (and `gχL/R` its Left/Right coupling to Z'). The total width to other non-SM particles can be added as `Γxx`.  If not, leave `Γxx` as 0.
+where `MZ'` is the *Z'* mass (in TeV), `gfL/R` is the *Z'* coupling to the corresponding Left/Right visible fermion, and `Γνν`, `Γww`, `ΓZh` are the partial widths to neutrinos, *WW* and *Zh*, and `mχ` is the fermionic DM mass (and `gχL/R` its Left/Right coupling to *Z'*). The total width to other non-SM particles can be added as `Γxx`.  If not, leave `Γxx` as 0.
 
 Every benchmark point in parameter space should be set in a different row. There is no limit in the number of signal points (i.e. rows) that can be explored.
 
