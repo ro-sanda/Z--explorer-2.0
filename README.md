@@ -34,7 +34,7 @@ where `MZ'` is the *Z'* mass (in TeV), `gfL/R` is the *Z'* coupling to the corre
 Every benchmark point in parameter space should be set in a different row. There is no limit in the number of signal points (i.e. rows) that can be explored.
 
 
-In `/incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1` can be found an incard example for the vector mediator case presented in ATLAS results (Phys. Rev.D 103 (2021) 11, 112006) to perform a test run and check the output card which will be placed at `/output/1.dat` .
+In `/incard/example/ATLAS-DM-Simplified-VEC-gq=0.25-gx=1` can be found an incard example for the vector mediator case presented in ATLAS results <a href="https://arxiv.org/pdf/2102.10874.pdf" target=newwindow >(arXiv:2102.10874)</a> to perform a test run and check the output card which will be placed at `/output/1.dat` .
 
 
 
