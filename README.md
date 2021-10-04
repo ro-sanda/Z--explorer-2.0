@@ -86,9 +86,8 @@ For visible channels:
 Available experimental data from LHC to all possible Z' decay channels is stored in  `/cards/` folder as experimental cards. Data is specified in two columns, where the first one is the corresponding MZ' (in TeV) and the second one is the corresponding σlim (in pb): 
 
 
-`exp_card_1.dat`-> jj (arXiv:1910.08447) 
-
-`exp_card_2.dat`-> bb (arXiv:1910.08447)
+- `exp_card_1.dat`-> jj (arXiv:1910.08447) 
+- `exp_card_2.dat`-> bb (arXiv:1910.08447)
 `exp_card_3.dat`-> tt (arXiv:1810.05955)
 `exp_card_4.dat`-> ee (arXiv:2103.02708)
 `exp_card_5.dat`-> μμ (arXiv:2103.02708)
@@ -124,7 +123,7 @@ Data is specified in three columns in this case, where the first one is the corr
 
 For visible channels:
 
-For computing Z' production cross-section, previously generated and recorded production cross-section with MadGraph5_aMC@NLO (arXiv:1405.0301) is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at $\sqrt{s}$ = 13 TeV, and for M between 0.4 and 8 TeV (the range of masses that can be explored with Z'-explorer).
+For computing Z' production cross-section, previously generated and recorded production cross-section with MadGraph5_aMC@NLO (arXiv:1405.0301) is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at \sqrt{s} = 13 TeV, and for M between 0.4 and 8 TeV (the range of masses that can be explored with Z'-explorer).
 
 `sim_card_1.dat`->  uu-->Z'
 `sim_card_2.dat`->  dd-->Z'
