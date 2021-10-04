@@ -140,17 +140,17 @@ For invisible χχ channel:
 In this case, since this channel is associated with the mono-jet search, for computing Z' production cross-section, previously generated and recorded production cross-section plus ISR with MadGraph5_aMC@NLO is stored in `/cards/` folder, also as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at sqrt(s) = 13 TeV, and for MZ' between 0.001 and 2.5 TeV (the range of masses that are explored in the mono-jet results), for the vector and the axial-vector mediators cases.
 
 
-- `AXIAL_Zpj_1.dat`->  pp-->Z'_{A} j
-- `AXIAL_Zpj_2.dat`->  pp-->Z'_{A} j
-- `AXIAL_Zpj_3.dat`->  pp-->Z'_{A} j
-- `AXIAL_Zpj_4.dat`->  pp-->Z'_{A} j
+- `AXIAL_Zpj_1.dat`->  pp &rarr; Z'<sub>A</sub> j 
+- `AXIAL_Zpj_2.dat`->  pp &rarr; Z'<sub>A</sub> j 
+- `AXIAL_Zpj_3.dat`->  pp &rarr; Z'<sub>A</sub> j 
+- `AXIAL_Zpj_4.dat`->  pp &rarr; Z'<sub>A</sub> j 
 
 
 
-- `VEC_Zpj_1.dat`->  pp-->Z'_{V} j
-- `VEC_Zpj_2.dat`->  pp-->Z'_{V} j
-- `VEC_Zpj_3.dat`->  pp-->Z'_{V} j
-- `VEC_Zpj_4.dat`->  pp-->Z'_{V} j
+- `VEC_Zpj_1.dat`->  pp &rarr; Z'<sub>V</sub> j 
+- `VEC_Zpj_2.dat`->  pp &rarr; Z'<sub>V</sub> j 
+- `VEC_Zpj_3.dat`->  pp &rarr; Z'<sub>V</sub> j 
+- `VEC_Zpj_4.dat`->  pp &rarr; Z'<sub>V</sub> j 
 
 
 These simulations are combined with the incard data and properly turn into right and left chiralities contributions to calculate σpred for χχ channel.
