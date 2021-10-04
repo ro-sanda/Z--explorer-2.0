@@ -12,7 +12,7 @@
 
 Download main directory `/Z'-explorer-2.0/` into your system. To start, set on `/lib/` folder and run `make`. No additional steps are required. 
 
-The script runs in C++.
+The script runs in *C++*.
 
 If changes in source code are done, set on `/lib/` folder again and repeat the above before running.
 
@@ -23,7 +23,7 @@ If changes in source code are done, set on `/lib/` folder again and repeat the a
 #### SET MODEL:
 
 
-Information about the *Z'* model must be provided through an incard text file, that must be stored as `/incard/card_1.dat`. For each benchmark point in the NP parameter space, the following information must be provided in columns (separated by spaces, no tabs):
+Information about the *Z'* model must be provided through an incard text file, that must be stored as `/incard/card_1.dat`. For each benchmark point in the New Physics parameter space, the following information must be provided in columns (separated by spaces, no tabs):
 
 ~~~
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
@@ -111,7 +111,7 @@ For the Dirac DM (*χχ*) channel, in  `/cards/` folder also can be found
 
 - `DM/AXIAL/DM_1.dat` -> *χχ* <a href="https://arxiv.org/pdf/2102.10874.pdf" target=newwindow >(arXiv:2102.10874)</a> 
 
-Data is specified in three columns in this case, where the first one is the corresponding M<sub>Z'</sub> (in TeV), the second one is the corresponding m<sub>χ</sub> (in TeV), and the third one is the σ<sub>lim</sub> (in pb). In this particular case, results are set for the leptophobic axial-vector mediator case with g<sub>q</sub>=0.25 and g<sub>χ</sub>=1 (as in ATLAS results), so bounds are properly re-scale during program execution for arbitrary coupling structure.
+Data is specified in three columns in this case, where the first one is the corresponding M<sub>Z'</sub> (in TeV), the second one is the corresponding m<sub>χ</sub> (in TeV), and the third one is the σ<sub>lim</sub> (in pb). In this particular case, results are set for the leptophobic axial-vector mediator case with g<sub>q</sub>=0.25 and g<sub>χ</sub>=1 (as in ATLAS results in <a href="https://arxiv.org/pdf/2102.10874.pdf" target=newwindow >2102.10874</a>), so bounds are properly re-scale during program execution for arbitrary coupling structure.
 
 
 
@@ -123,7 +123,7 @@ Data is specified in three columns in this case, where the first one is the corr
 
 For visible channels:
 
-For computing *Z'* production cross-section, previously generated and recorded production cross-section with MadGraph5_aMC@NLO <a href="https://arxiv.org/pdf/1405.0301.pdf" target=newwindow >(arXiv:1405.0301)</a> is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored *Z'* model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M<sub>Z'</sub> between 0.4 and 8 TeV (the range of masses that can be explored with *Z'-explorer*).
+For computing *Z'* production cross-section, previously generated and recorded production cross-section with *MadGraph5_aMC@NLO* <a href="https://arxiv.org/pdf/1405.0301.pdf" target=newwindow >(arXiv:1405.0301)</a> is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored *Z'* model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M<sub>Z'</sub> between 0.4 and 8 TeV (the range of masses that can be explored with *Z'-explorer*).
 
 - `sim_card_1.dat`->  *uu* &rarr; *Z'*
 - `sim_card_2.dat`->  *dd* &rarr; *Z'*
@@ -137,19 +137,19 @@ These simulations are combined with the incard data to calculate σ<sub>pred</su
 
 For invisible χχ channel:
 
-In this case, since this channel is associated with the mono-jet search, for computing *Z'* production cross-section, previously generated and recorded production cross-section plus *ISR* with MadGraph5_aMC@NLO is stored in `/cards/` folder, also as simulation cards. These simulations were generated with a tailored *Z'* model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M<sub>Z'</sub> between 0.001 and 2.5 TeV (the range of masses that are explored in the mono-jet results), for the vector and the axial-vector mediators cases.
+In this case, since this channel is associated with the mono-jet search, for computing *Z'* production cross-section, previously generated and recorded production cross-section plus *ISR* with *MadGraph5_aMC@NLO* is stored in `/cards/` folder, also as simulation cards. These simulations were generated with a tailored *Z'* model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M<sub>Z'</sub> between 0.001 and 2.5 TeV (the range of masses that are explored in the mono-jet results), for the vector and the axial-vector mediators cases.
 
 
-- `AXIAL_Zpj_1.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
-- `AXIAL_Zpj_2.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
-- `AXIAL_Zpj_3.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
-- `AXIAL_Zpj_4.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
+- `AXIAL_Zpj_1.dat`->  *pp* &rarr; *Z'<sub>A</sub> j* 
+- `AXIAL_Zpj_2.dat`->  *pp* &rarr; *Z'<sub>A</sub> j* 
+- `AXIAL_Zpj_3.dat`->  *pp* &rarr; *Z'<sub>A</sub> j* 
+- `AXIAL_Zpj_4.dat`->  *pp* &rarr; *Z'<sub>A</sub> j* 
 
 
-- `VEC_Zpj_1.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j* 
-- `VEC_Zpj_2.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j*  
-- `VEC_Zpj_3.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j* 
-- `VEC_Zpj_4.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j* 
+- `VEC_Zpj_1.dat`->  *pp* &rarr; *Z'<sub>V</sub> j* 
+- `VEC_Zpj_2.dat`->  *pp* &rarr; *Z'<sub>V</sub> j*  
+- `VEC_Zpj_3.dat`->  *pp* &rarr; *Z'<sub>V</sub> j* 
+- `VEC_Zpj_4.dat`->  *pp* &rarr; *Z'<sub>V</sub> j* 
 
 
 These simulations are combined with the incard data and properly turn into right and left chiralities contributions to calculate σ<sub>pred</sub> for *χχ* channel.
