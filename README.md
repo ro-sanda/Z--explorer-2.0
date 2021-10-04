@@ -60,7 +60,7 @@ After providing an incard, set on the main directory and enter `./program.out` .
 The generated output file is saved in `/output/1.dat` . The output contains the following information for each benchmark point set in incard:
  
 ~~~
-M  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx  Sjj  Sbb  Stt  See  Sμμ  Sττ  Sνν  SWW  SZh  Sχχ Sxx   ΓZ'   WARNING:ΓZ'>5%
+MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx  Sjj  Sbb  Stt  See  Sμμ  Sττ  Sνν  SWW  SZh  Sχχ Sxx   ΓZ'   WARNING:ΓZ'>5%
 ~~~
 
 where `S` (defined as σpred/σlim) is the strength of the signal in each possible Z' decay channel, `ΓZ'` is the Z' total width and the warning displays 1 when `ΓZ'`>5% and 0 otherwise. 
@@ -137,7 +137,7 @@ These simulations are combined with the incard data to calculate σpred for visi
 
 For invisible χχ channel:
 
-In this case, since this channel is associated with the mono-jet search, for computing Z' production cross-section, previously generated and recorded production cross-section plus ISR with MadGraph5_aMC@NLO is stored in `/cards/` folder, also as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at sqrt(s) = 13 TeV, and for M between 0.001 and 2.5 TeV (the range of masses that are explored in the mono-jet results), for the vector and the axial-vector mediators cases.
+In this case, since this channel is associated with the mono-jet search, for computing Z' production cross-section, previously generated and recorded production cross-section plus ISR with MadGraph5_aMC@NLO is stored in `/cards/` folder, also as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at sqrt(s) = 13 TeV, and for MZ' between 0.001 and 2.5 TeV (the range of masses that are explored in the mono-jet results), for the vector and the axial-vector mediators cases.
 
 
 - `AXIAL_Zpj_1.dat`->  pp-->Z'_{A} j
