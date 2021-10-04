@@ -157,4 +157,4 @@ These simulations are combined with the incard data and properly turn into right
 
 
 
-For more information, please visit the associated publication <a href="https://arxiv.org/pdf/2109.13194.pdf" target=newwindow >*"Z'-explorer 2.0: reconnoitering the dark matter landscape".* </a>
+For more information, please visit the associated publication <a href="https://arxiv.org/pdf/2109.13194.pdf" target=newwindow >*"Z'-explorer 2.0: reconnoitering the dark matter landscape"* </a>.
