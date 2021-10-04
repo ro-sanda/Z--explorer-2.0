@@ -86,7 +86,7 @@ For visible channels:
 Available experimental data from LHC to all possible *Z'* decay channels is stored in  `/cards/` folder as experimental cards. Data is specified in two columns, where the first one is the corresponding MZ' (in TeV) and the second one is the corresponding σlim (in pb): 
 
 
-- `exp_card_1.dat`-> *jj* <a href="https://arxiv.org/pdf/1910.08447.pdf" target=newwindow >*(arXiv:1910.08447) *</a>
+- `exp_card_1.dat`-> *jj* <a href="https://arxiv.org/pdf/1910.08447.pdf" target=newwindow >(arXiv:1910.08447)</a>
 - `exp_card_2.dat`-> *bb* (arXiv:1910.08447)
 - `exp_card_3.dat`-> *tt* (arXiv:1810.05955)
 - `exp_card_4.dat`-> *ee* (arXiv:2103.02708)
