@@ -87,13 +87,13 @@ Available experimental data from LHC to all possible *Z'* decay channels is stor
 
 
 - `exp_card_1.dat`-> *jj* <a href="https://arxiv.org/pdf/1910.08447.pdf" target=newwindow >(arXiv:1910.08447)</a>
-- `exp_card_2.dat`-> *bb* (arXiv:1910.08447)
-- `exp_card_3.dat`-> *tt* (arXiv:1810.05955)
-- `exp_card_4.dat`-> *ee* (arXiv:2103.02708)
-- `exp_card_5.dat`-> *μμ* (arXiv:2103.02708)
-- `exp_card_6.dat`-> *ττ* (arXiv:1709.07242)
-- `exp_card_8.dat`-> *ww* (arXiv:1710.07235)
-- `exp_card_9.dat`-> *zh* (arXiv:1906.00057)
+- `exp_card_2.dat`-> *bb* <a href="https://arxiv.org/pdf/1910.08447.pdf" target=newwindow >(arXiv:1910.08447)</a> 
+- `exp_card_3.dat`-> *tt* <a href="https://arxiv.org/pdf/1810.05955.pdf" target=newwindow >(arXiv:1810.05955)</a> 
+- `exp_card_4.dat`-> *ee* <a href="https://arxiv.org/pdf/2103.02708.pdf" target=newwindow >(arXiv:2103.02708)</a>
+- `exp_card_5.dat`-> *μμ* <a href="https://arxiv.org/pdf/2103.02708.pdf" target=newwindow >(arXiv:2103.02708)</a>
+- `exp_card_6.dat`-> *ττ* <a href="https://arxiv.org/pdf/1709.07242.pdf" target=newwindow >(arXiv:1709.07242)</a>
+- `exp_card_8.dat`-> *ww* <a href="https://arxiv.org/pdf/1710.07235.pdf" target=newwindow >(arXiv:1710.07235)</a>
+- `exp_card_9.dat`-> *zh* <a href="https://arxiv.org/pdf/1906.00057.pdf" target=newwindow >(arXiv:1906.00057)</a>
 
 User can update the experimental information just by replacing the corresponding experimental card. No other step is required. 
 
