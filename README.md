@@ -152,7 +152,7 @@ In this case, since this channel is associated with the mono-jet search, for com
 - `VEC_Zpj_4.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j* 
 
 
-These simulations are combined with the incard data and properly turn into right and left chiralities contributions to calculate σpred for *χχ* channel.
+These simulations are combined with the incard data and properly turn into right and left chiralities contributions to calculate σ<sub>pred</sub> for *χχ* channel.
 
 
 
