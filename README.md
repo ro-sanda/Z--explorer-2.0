@@ -123,7 +123,7 @@ Data is specified in three columns in this case, where the first one is the corr
 
 For visible channels:
 
-For computing *Z'* production cross-section, previously generated and recorded production cross-section with *MadGraph5_aMC@NLO* <a href="https://arxiv.org/pdf/1405.0301.pdf" target=newwindow >(arXiv:1405.0301)</a> is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored *Z'* model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M<sub>Z'</sub> between 0.4 and 8 TeV (the range of masses that can be explored with *Z'-explorer*).
+For computing *Z'* production cross-section, previously generated and recorded production cross-section with *MadGraph5_aMC@NLO* <a href="https://arxiv.org/pdf/1405.0301.pdf" target=newwindow >(arXiv:1405.0301)</a> is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored *Z'* model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M<sub>Z'</sub> between 0.4 and 8 TeV (the range of masses that can be scanned with *Z'-explorer*).
 
 - `sim_card_1.dat`->  *uu* &rarr; *Z'*
 - `sim_card_2.dat`->  *dd* &rarr; *Z'*
