@@ -29,7 +29,7 @@ Information about the *Z'* model must be provided through an incard text file, t
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
 ~~~
 
-where `MZ'` is the Z' mass (in TeV), `gfL/R` is the Z' coupling to the corresponding Left/Right visible fermion, and `Γνν`, `Γww`, `ΓZh` are the partial widths to neutrinos, WW and Zh, and `mχ` is the fermionic DM mass (and `gχL/R` its Left/Right coupling to Z'). The total width to other non-SM particles can be added as `Γxx`.  If not, leave `Γxx` as 0.
+where `MZ'` is the *Z'* mass (in TeV), `gfL/R` is the *Z'* coupling to the corresponding Left/Right visible fermion, and `Γνν`, `Γww`, `ΓZh` are the partial widths to neutrinos, *WW* and *Zh*, and `mχ` is the fermionic DM mass (and `gχL/R` its Left/Right coupling to Z'). The total width to other non-SM particles can be added as `Γxx`.  If not, leave `Γxx` as 0.
 
 Every benchmark point in parameter space should be set in a different row. There is no limit in the number of signal points (i.e. rows) that can be explored.
 
@@ -63,7 +63,7 @@ The generated output file is saved in `/output/1.dat` . The output contains the 
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx  Sjj  Sbb  Stt  See  Sμμ  Sττ  Sνν  SWW  SZh  Sχχ Sxx   ΓZ'   WARNING:ΓZ'>5%
 ~~~
 
-where `S` (defined as σpred/σlim) is the strength of the signal in each possible Z' decay channel, `ΓZ'` is the Z' total width and the warning displays 1 when `ΓZ'`>5% and 0 otherwise. 
+where `S` (defined as σpred/σlim) is the strength of the signal in each possible *Z'* decay channel, `ΓZ'` is the *Z'* total width and the warning displays 1 when `ΓZ'`>5% and 0 otherwise. 
 
 
 More information about calculation can be found in `/extra/` folder:
@@ -83,17 +83,17 @@ More information about calculation can be found in `/extra/` folder:
 
 For visible channels:
 
-Available experimental data from LHC to all possible Z' decay channels is stored in  `/cards/` folder as experimental cards. Data is specified in two columns, where the first one is the corresponding MZ' (in TeV) and the second one is the corresponding σlim (in pb): 
+Available experimental data from LHC to all possible *Z'* decay channels is stored in  `/cards/` folder as experimental cards. Data is specified in two columns, where the first one is the corresponding MZ' (in TeV) and the second one is the corresponding σlim (in pb): 
 
 
-- `exp_card_1.dat`-> jj (arXiv:1910.08447) 
-- `exp_card_2.dat`-> bb (arXiv:1910.08447)
-- `exp_card_3.dat`-> tt (arXiv:1810.05955)
-- `exp_card_4.dat`-> ee (arXiv:2103.02708)
-- `exp_card_5.dat`-> μμ (arXiv:2103.02708)
-- `exp_card_6.dat`-> ττ (arXiv:1709.07242)
-- `exp_card_8.dat`-> ww (arXiv:1710.07235)
-- `exp_card_9.dat`-> zh (arXiv:1906.00057)
+- `exp_card_1.dat`-> *jj* (arXiv:1910.08447) 
+- `exp_card_2.dat`-> *bb* (arXiv:1910.08447)
+- `exp_card_3.dat`-> *tt* (arXiv:1810.05955)
+- `exp_card_4.dat`-> *ee* (arXiv:2103.02708)
+- `exp_card_5.dat`-> *μμ* (arXiv:2103.02708)
+- `exp_card_6.dat`-> *ττ* (arXiv:1709.07242)
+- `exp_card_8.dat`-> *ww* (arXiv:1710.07235)
+- `exp_card_9.dat`-> *zh* (arXiv:1906.00057)
 
 User can update the experimental information just by replacing the corresponding experimental card. No other step is required. 
 
@@ -102,12 +102,12 @@ User can update the experimental information just by replacing the corresponding
 
 For invisible channels:
 
-- `exp_card_7.dat`-> νν -
-- `exp_card_10.dat`-> xx -
+- `exp_card_7.dat`-> *νν* -
+- `exp_card_10.dat`-> *xx* -
 
 Note that Sνν and Sxx in `/output/1.dat` are left as dummy variables for future updates.
 
-For the Dirac DM (χχ) channel, in  `/cards/` folder also can be found
+For the Dirac DM (*χχ*) channel, in  `/cards/` folder also can be found
 
 - `DM/AXIAL/DM_1.dat` -> χχ (arXiv:2102.10874)
 
