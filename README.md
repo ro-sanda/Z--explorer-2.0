@@ -29,7 +29,7 @@ Information about the Z' model must be provided through an incard text file, tha
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
 ~~~
 
-where MZ' is the Z' mass (in TeV), gfL/R is the Z' coupling to the corresponding Left/Right visible fermion, and Γνν, Γww, ΓZh are the partial widths to neutrinos, WW and Zh, and mχ is the fermionic DM mass (and gχL/R its Left/Right coupling to Z'). The total width to other non-SM particles can be added as Γxx.  If not, leave Γxx as 0.
+where `MZ'` is the Z' mass (in TeV), `gfL/R` is the Z' coupling to the corresponding Left/Right visible fermion, and `Γνν`, `Γww`, `ΓZh` are the partial widths to neutrinos, WW and Zh, and `mχ` is the fermionic DM mass (and `gχL/R` its Left/Right coupling to Z'). The total width to other non-SM particles can be added as `Γxx`.  If not, leave `Γxx` as 0.
 
 Every benchmark point in parameter space should be set in a different row. There is no limit in the number of signal points (i.e. rows) that can be explored.
 
@@ -59,11 +59,11 @@ After providing an incard, set on the main directory and enter `./program.out` .
 
 The generated output file is saved in `/output/1.dat` . The output contains the following information for each benchmark point set in incard:
  
-
+~~~
 M  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx  Sjj  Sbb  Stt  See  Sμμ  Sττ  Sνν  SWW  SZh  Sχχ Sxx   ΓZ'   WARNING:ΓZ'>5%
+~~~
 
-
-where S (defined as σpred/σlim) is the strength of the signal in each possible Z' decay channel, ΓZ' is the Z' total width and the warning displays 1 when ΓZ'>5% and 0 otherwise. 
+where `S` (defined as σpred/σlim) is the strength of the signal in each possible Z' decay channel, `ΓZ'` is the Z' total width and the warning displays 1 when `ΓZ'`>5% and 0 otherwise. 
 
 
 More information about calculation can be found in `/extra/` folder:
