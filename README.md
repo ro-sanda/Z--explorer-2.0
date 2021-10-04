@@ -25,9 +25,9 @@ If changes in source code are done, set on `/lib/` folder again and repeat the a
 
 Information about the Z' model must be provided through an incard text file, that must be stored as `/incard/card_1.dat`. For each benchmark point in the NP parameter space, the following information must be provided in columns (separated by spaces, no tabs):
 
-
+~~~
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx
-
+~~~
 
 where MZ' is the Z' mass (in TeV), gfL/R is the Z' coupling to the corresponding Left/Right visible fermion, and Γνν, Γww, ΓZh are the partial widths to neutrinos, WW and Zh, and mχ is the fermionic DM mass (and gχL/R its Left/Right coupling to Z'). The total width to other non-SM particles can be added as Γxx.  If not, leave Γxx as 0.
 
