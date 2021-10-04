@@ -10,7 +10,7 @@
 
 
 
-Download main directory */Z'-explorer 2.0/* into your system. To start, set on */lib/* folder and run *make*. No additional steps are required. 
+Download main directory */Z'-explorer 2.0/* into your system. To start, set on */lib/* folder and run `make`. No additional steps are required. 
 
 The script runs in C++.
 
