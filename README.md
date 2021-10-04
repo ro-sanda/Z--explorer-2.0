@@ -70,8 +70,8 @@ More information about calculation can be found in `/extra/` folder:
 
 - `2.dat` contains the estimated decay widths to all channels. 
 - `3.dat` contains the estimated branching ratios to all channels.
-- `4.dat` contains the estimated σpred for visible channels.
-- `5.dat` contains the extracted σlim from experimental data for visible channels.
+- `4.dat` contains the estimated σ<sub>pred</sub> for visible channels.
+- `5.dat` contains the extracted σ<sub>lim</sub> from experimental data for visible channels.
 
 
 
