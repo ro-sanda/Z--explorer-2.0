@@ -63,7 +63,7 @@ The generated output file is saved in `/output/1.dat` . The output contains the 
 MZ'  guL guR  gdL  gdR  gcL  gcR  gsL  gsR  gbL  gbR  gtL  gtR  geL  geR  gμL  gμR  gτL  gτR  Γνν  Γww  ΓZh mχ gχL gχR Γxx  Sjj  Sbb  Stt  See  Sμμ  Sττ  Sνν  SWW  SZh  Sχχ Sxx   ΓZ'   WARNING:ΓZ'>5%
 ~~~
 
-where `S` (defined as σpred/σlim) is the strength of the signal in each possible *Z'* decay channel, `ΓZ'` is the *Z'* total width and the warning displays 1 when `ΓZ'`>5% and 0 otherwise. 
+where `S` (defined as σ<sub>pred</sub>/σ<sub>lim</sub>) is the strength of the signal in each possible *Z'* decay channel, `ΓZ'` is the *Z'* total width and the warning displays 1 when `ΓZ'`>5% and 0 otherwise. 
 
 
 More information about calculation can be found in `/extra/` folder:
