@@ -123,13 +123,13 @@ Data is specified in three columns in this case, where the first one is the corr
 
 For visible channels:
 
-For computing Z' production cross-section, previously generated and recorded production cross-section with MadGraph5_aMC@NLO (arXiv:1405.0301) is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M between 0.4 and 8 TeV (the range of masses that can be explored with Z'-explorer).
+For computing *Z'* production cross-section, previously generated and recorded production cross-section with MadGraph5_aMC@NLO (arXiv:1405.0301) is stored in `/cards/` folder as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at &radic; s = 13 TeV, and for M between 0.4 and 8 TeV (the range of masses that can be explored with Z'-explorer).
 
-- `sim_card_1.dat`->  uu-->Z'
-- `sim_card_2.dat`->  dd-->Z'
-- `sim_card_3.dat`->  cc-->Z'
-- `sim_card_4.dat`->  ss-->Z'
-- `sim_card_5.dat`->  bb-->Z'
+- `sim_card_1.dat`->  *uu* &rarr; *Z'*
+- `sim_card_2.dat`->  *dd* &rarr; *Z'*
+- `sim_card_3.dat`->  *cc* &rarr; *Z'*
+- `sim_card_4.dat`->  *ss* &rarr; *Z'*
+- `sim_card_5.dat`->  *bb* &rarr; *Z'*
 
 These simulations are combined with the incard data to calculate σpred for visible channels.
 
@@ -140,17 +140,16 @@ For invisible χχ channel:
 In this case, since this channel is associated with the mono-jet search, for computing Z' production cross-section, previously generated and recorded production cross-section plus ISR with MadGraph5_aMC@NLO is stored in `/cards/` folder, also as simulation cards. These simulations were generated with a tailored Z' model which couples with unity to only one quark in the proton each time, at sqrt(s) = 13 TeV, and for MZ' between 0.001 and 2.5 TeV (the range of masses that are explored in the mono-jet results), for the vector and the axial-vector mediators cases.
 
 
-- `AXIAL_Zpj_1.dat`->  pp &rarr; Z'<sub>A</sub> j 
-- `AXIAL_Zpj_2.dat`->  pp &rarr; Z'<sub>A</sub> j 
-- `AXIAL_Zpj_3.dat`->  pp &rarr; Z'<sub>A</sub> j 
-- `AXIAL_Zpj_4.dat`->  pp &rarr; Z'<sub>A</sub> j 
+- `AXIAL_Zpj_1.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
+- `AXIAL_Zpj_2.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
+- `AXIAL_Zpj_3.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
+- `AXIAL_Zpj_4.dat`->  *pp* &rarr; *Z'*<sub>A</sub> *j* 
 
 
-
-- `VEC_Zpj_1.dat`->  pp &rarr; Z'<sub>V</sub> j 
-- `VEC_Zpj_2.dat`->  pp &rarr; Z'<sub>V</sub> j 
-- `VEC_Zpj_3.dat`->  pp &rarr; Z'<sub>V</sub> j 
-- `VEC_Zpj_4.dat`->  pp &rarr; Z'<sub>V</sub> j 
+- `VEC_Zpj_1.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j* 
+- `VEC_Zpj_2.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j*  
+- `VEC_Zpj_3.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j* 
+- `VEC_Zpj_4.dat`->  *pp* &rarr; *Z'*<sub>V</sub> *j* 
 
 
 These simulations are combined with the incard data and properly turn into right and left chiralities contributions to calculate σpred for χχ channel.
